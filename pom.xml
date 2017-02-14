@@ -4,14 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.camunda.bpm.extension</groupId>
-    <artifactId>camunda-webapp-jboss-sso</artifactId>
+    <artifactId>camunda-webapp-ee-jboss-sso</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
 	<packaging>war</packaging>
 
     <properties>
         <classes.dir>${build.directory}/extracted-camunda-webapp</classes.dir>
-        <camunda.version>7.6.0</camunda.version>
+        <camunda.version>7.6.2-ee</camunda.version>
     </properties>
 
     <parent>
@@ -80,7 +80,7 @@
 							<artifactItems>
 								<artifactItem>
 									<groupId>org.camunda.bpm.webapp</groupId>
-									<artifactId>camunda-webapp-jboss</artifactId>
+									<artifactId>camunda-webapp-ee-jboss</artifactId>
 									<version>${camunda.version}</version>
 									<type>war</type>
 									<overWrite>true</overWrite>
@@ -153,7 +153,7 @@
         <repository>
             <id>camunda-bpm-nexus</id>
             <name>camunda-bpm-nexus</name>
-            <url>https://app.camunda.com/nexus/content/groups/public</url>
+            <url>https://app.camunda.com/nexus/content/repositories/camunda-bpm-ee</url>
         </repository>
         <repository>
             <id>jboss-public-repository</id>

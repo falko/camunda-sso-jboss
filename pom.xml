@@ -59,11 +59,19 @@
 			<version>${camunda.version}</version>
 			<scope>provided</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 
 	<build>
 		<defaultGoal>clean install</defaultGoal>
+		<finalName>${artifactId}-${camunda.version}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -130,8 +138,6 @@
 				<artifactId>maven-war-plugin</artifactId>
 
 				<configuration>
-          <warName>${artifactId}-${camunda.version}</warName>
-          
                     <archive>
                         <manifestFile>${classes.dir}/META-INF/MANIFEST.MF</manifestFile>
                     </archive>

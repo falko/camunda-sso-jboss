@@ -164,7 +164,7 @@
 	        <!-- Usage: mvn jboss-as:deploy See also: https://docs.jboss.org/jbossas/7/plugins/maven/latest/examples/deployment-example.html -->
 	        <groupId>org.jboss.as.plugins</groupId>
 	        <artifactId>jboss-as-maven-plugin</artifactId>
-	        <version>7.6.Final</version>
+	        <version>7.9.Final</version>
 	      </plugin>
 	      <plugin>
 	        <!-- Usage: mvn wildfly:deploy See also: https://docs.jboss.org/wildfly/plugins/maven/latest/examples/deployment-example.html -->
